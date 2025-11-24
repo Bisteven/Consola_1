@@ -2,8 +2,15 @@ using System;
 
 namespace TiposYMatricula
 {
+    /// <summary>
+    /// Clase principal que contiene el menú y las operaciones con tipos de datos.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Punto de entrada principal de la aplicación.
+        /// </summary>
+        /// <param name="args">Argumentos de línea de comandos (no se utilizan).</param>
         static void Main(string[] args)
         {
             bool continuar = true;
@@ -51,6 +58,9 @@ namespace TiposYMatricula
             }
         }
         
+        /// <summary>
+        /// Muestra el menú principal de opciones en la consola.
+        /// </summary>
         static void MostrarMenu()
         {
             Console.WriteLine("╔════════════════════════════════════╗");
@@ -67,6 +77,9 @@ namespace TiposYMatricula
             Console.Write("Seleccione una opción: ");
         }
         
+        /// <summary>
+        /// Realiza operaciones aritméticas básicas con dos números enteros ingresados por el usuario.
+        /// </summary>
         static void OperacionesConInt()
         {
             Console.WriteLine("\n=== OPERACIONES CON INT ===");
@@ -101,6 +114,9 @@ namespace TiposYMatricula
             }
         }
         
+        /// <summary>
+        /// Realiza operaciones comunes con dos cadenas de texto ingresadas por el usuario.
+        /// </summary>
         static void OperacionesConString()
         {
             Console.WriteLine("\n=== OPERACIONES CON STRING ===");
@@ -120,6 +136,9 @@ namespace TiposYMatricula
             Console.WriteLine($"Cadena 1 en minúsculas: {cadena1.ToLower()}");
         }
         
+        /// <summary>
+        /// Realiza operaciones aritméticas con dos números de tipo double ingresados por el usuario.
+        /// </summary>
         static void OperacionesConDouble()
         {
             Console.WriteLine("\n=== OPERACIONES CON DOUBLE ===");
@@ -155,6 +174,9 @@ namespace TiposYMatricula
             }
         }
         
+        /// <summary>
+        /// Realiza operaciones aritméticas básicas con dos números de tipo float ingresados por el usuario.
+        /// </summary>
         static void OperacionesConFloat()
         {
             Console.WriteLine("\n=== OPERACIONES CON FLOAT ===");
@@ -189,6 +211,9 @@ namespace TiposYMatricula
             }
         }
         
+        /// <summary>
+        /// Realiza operaciones lógicas con dos valores booleanos ingresados por el usuario.
+        /// </summary>
         static void OperacionesConBoolean()
         {
             Console.WriteLine("\n=== OPERACIONES CON BOOLEAN ===");
@@ -218,6 +243,9 @@ namespace TiposYMatricula
             }
         }
         
+        /// <summary>
+        /// Crea un objeto de tipo Persona, muestra su información y permite modificarla.
+        /// </summary>
         static void OperacionesConObjeto()
         {
             Console.WriteLine("\n=== OPERACIONES CON OBJETO (Persona) ===");
@@ -253,22 +281,45 @@ namespace TiposYMatricula
         }
     }
     
+    /// <summary>
+    /// Representa a una persona con nombre y edad.
+    /// </summary>
     class Persona
     {
+        /// <summary>
+        /// Obtiene o establece el nombre de la persona.
+        /// </summary>
         public string Nombre { get; set; }
+        
+        /// <summary>
+        /// Obtiene o establece la edad de la persona.
+        /// </summary>
         public int Edad { get; set; }
         
+        /// <summary>
+        /// Inicializa una nueva instancia de la clase <see cref="Persona"/>.
+        /// </summary>
+        /// <param name="nombre">El nombre de la persona.</param>
+        /// <param name="edad">La edad de la persona.</param>
         public Persona(string nombre, int edad)
         {
             Nombre = nombre;
             Edad = edad;
         }
         
+        /// <summary>
+        /// Devuelve una cadena con la información completa de la persona.
+        /// </summary>
+        /// <returns>Una cadena que representa el nombre y la edad de la persona.</returns>
         public string MostrarInformacion()
         {
             return $"Nombre: {Nombre}, Edad: {Edad} años";
         }
         
+        /// <summary>
+        /// Comprueba si la persona es mayor de edad (18 años o más).
+        /// </summary>
+        /// <returns>Verdadero si la persona es mayor de edad, de lo contrario, falso.</returns>
         public bool EsMayorDeEdad()
         {
             return Edad >= 18;
