@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TiposYMatricula")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68cf90f2089416473723fdfd0987e0d2824a0932")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e2cea7a8cdfa58672af7f1e4afc01fb593a02cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TiposYMatricula")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TiposYMatricula")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
