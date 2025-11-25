@@ -66,13 +66,13 @@ namespace TiposYMatricula
             Console.WriteLine("╔════════════════════════════════════╗");
             Console.WriteLine("║      MENÚ - TIPOS DE DATOS         ║");
             Console.WriteLine("╠════════════════════════════════════╣");
-            Console.WriteLine("║  1. Operaciones con Int           ║");
-            Console.WriteLine("║  2. Operaciones con String        ║");
-            Console.WriteLine("║  3. Operaciones con Double        ║");
-            Console.WriteLine("║  4. Operaciones con float         ║");
-            Console.WriteLine("║  5. Operaciones con boolean       ║");
-            Console.WriteLine("║  6. Operaciones con Objeto       ║");
-            Console.WriteLine("║  0. Salir                         ║");
+            Console.WriteLine("║  1. Operaciones con Int            ║");
+            Console.WriteLine("║  2. Operaciones con String         ║");
+            Console.WriteLine("║  3. Operaciones con Double         ║");
+            Console.WriteLine("║  4. Operaciones con float          ║");
+            Console.WriteLine("║  5. Operaciones con boolean        ║");
+            Console.WriteLine("║  6. Operaciones con Objeto         ║");
+            Console.WriteLine("║  0. Salir                          ║");
             Console.WriteLine("╚════════════════════════════════════╝");
             Console.Write("Seleccione una opción: ");
         }
